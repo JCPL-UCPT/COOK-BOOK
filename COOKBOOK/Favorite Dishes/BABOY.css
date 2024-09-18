@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+header{
+    height: 60px;
+    width: 100%;
+    background: blue;
+    color: #f8f8f8;
+    display: flex;
+    align-items: center;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list{
+    display: none;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+.logo{
+    font-size: 24px;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background: url("BACKGROUND1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+}
+.hero h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.search-box{
+    max-width: 550px;
+    margin:  15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-box input{
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1rem;
+    border: 1px solid blue;
+}
+.search-box button{
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    background: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.recipes{
+    padding: 50px 0;
+}
+.recipes h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.recipe-section{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.recipe-card{
+    background: #fff;
+    margin: 30px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+}
+.recipe-card img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+.recipe-card h2{
+    font-size: 22px;
+    padding: 20px;
+}
+.recipe-card p{
+    font-size: 18px;
+    padding: 20px;
+}
+.recipe-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+footer{
+    background: blue;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.menu-icon{
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+}
+
+@media only screen and (min-width: 768px){
+    .menu-icon{
+        display: none;
+    }
+    .nav-list{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .hero h2{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 15px;
+    }
+}
+.foods{
+    padding: 50px 0;
+}
+.foods h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.food-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.food-card{
+    background: #fff;
+    margin: 30px 200px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+}
+.food-card img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.food-card h2{
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    background: blue;
+    color: #fff;
+    margin-top: -5px;
+}
+.food-card ol{
+    font-size: 18px;
+    padding: 40px;
+}
+.food-card ol li{
+    text-align: justify;
+}
+.food-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.about{
+    padding: 50px 0;
+}
+.about h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.about-section{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.about-card{
+    background: #fff;
+    margin: 30px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+    border-radius: 15px;
+}
+.about-card img{
+    width: auto;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    object-fit: cover;
+    margin-left: 11%;
+    margin-top: 10%;
+
+}
+.about-card h2{
+    font-size: 22px;
+    padding: 20px;
+    text-align: center;
+}
+.about-card p{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    font-family: Georgia;
+}
+.about-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.burlas{
+    padding: 50px 0;
+}
+.burlas h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.burlas-section{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.burlas-card{
+    background: #fff;
+    margin: 30px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+}
+.burlas-card img{
+    width: 420px;
+    height: 200px;
+    object-fit: cover;
+}
+.burlas-card h2{
+    font-size: 22px;
+    padding: 20px;
+}
+.burlas-card p{
+    font-size: 18px;
+    padding: 20px;
+}
+.burlas-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
+.clarks{
+    padding: 50px 0;
+}
+.clarks h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.clarks-section{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 10px;
+}
+.clarks-card{
+    background: #fff;
+    margin: 30px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+    box-shadow: 0 4px 8px blue;
+}
+.clarks-card img{
+    width: 420px;
+    height: 200px;
+    object-fit: cover;
+}
+.clarks-card h2{
+    font-size: 22px;
+    padding: 20px;
+}
+.clarks-card p{
+    font-size: 18px;
+    padding: 20px;
+}
+.clarks-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: blue;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+}
